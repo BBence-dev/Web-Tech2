@@ -9,28 +9,9 @@ mat-form-field{
   width: 20vw;
 }
 
-
-.logout{
-  color: #0074c2;
-  background-color: #ffffff;
-  font-size: 0 auto;
-  width: 0 auto;
-  margin-left: 0 auto;
-}
-
-
-
 .list{
   width: 100%;
   margin-left: 40%;
-}
-
-
-
-.menucard{
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .card{
@@ -38,14 +19,6 @@ mat-form-field{
   max-width: 425px;
   margin: 0 auto;
   margin-top: 5%;
-}
-
-
-
-.menubtn{
-  margin: 0 auto;
-  width: 0 auto;
-  font-size: 0 auto;
 }
 
 button{
@@ -62,11 +35,7 @@ button{
   margin: 20px;
 }
 
-:host {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 
 
 

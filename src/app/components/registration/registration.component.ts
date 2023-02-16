@@ -86,6 +86,8 @@ export class RegistrationComponent implements OnInit {
 
     emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
+    
+
 }
  
     

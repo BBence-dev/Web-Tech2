@@ -14,6 +14,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { AccountInfoComponent } from './components/account-info/account-info.component'
 import { ApiService } from './service/api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductEditComponent,
     LoginComponent,
     RegistrationComponent,
-    AccountInfoComponent
+    AccountInfoComponent,
+    HeaderComponent
   ],
 
   imports: [
