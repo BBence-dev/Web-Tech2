@@ -1,0 +1,21 @@
+<mat-card class="menucard">
+  <mat-card-content>
+  <button mat-raised-button routerLinkActive="active" routerLink="/product-list" class="menubtn">Termék lista</button>
+ <button mat-raised-button routerLinkActive="active" routerLink="/product-create" class="menubtn">Termék hozzáadása</button>
+ <button mat-raised-button  routerLinkActive="active" (click)=logout() class="logout">Kijelentkezés</button>
+</mat-card-content>
+</mat-card>
+
+
+
+    <mat-card class="card">
+      <h2 class="title">Fiók adatok</h2>
+      <mat-card-content>
+        <div>Név {{this.name}}</div>
+        <div>Felhasználónév: {{this.username}}</div>
+        <div>E-mail: {{this.email}}</div>
+        <div >Telefonszám: {{this.telszam}}</div>
+      </mat-card-content>
+    </mat-card>
+
+   

@@ -1,0 +1,23 @@
+<mat-card class="menucard">
+  <mat-card-content>
+ <button mat-raised-button routerLinkActive="active" routerLink="/product-create" class="menubtn">Termék hozzáadása</button>
+ <button mat-raised-button routerLinkActive="active" routerLink="/account-info" class="menubtn">Fiók</button>
+ <button mat-raised-button  routerLinkActive="active" (click)=logout() class="logout">Kijelentkezés</button>
+</mat-card-content>
+</mat-card>
+
+
+<mat-sidenav-container class="sidenav">
+<div class="list">
+  <mat-card class="cardlist" *ngFor="let product of Products; let i= index">
+    <mat-card-title class="title">
+      {{product.name}}
+    </mat-card-title>
+    <mat-card-content >
+      <div> Raktárban: {{product.amount}} </div>
+      <div> Ár: {{product.cost}} Ft </div>
+    </mat-card-content>
+    <button mat-raised-button (click)=edit(i)>Felvitel</button>
+  </mat-card>
+</div>
+</mat-sidenav-container>

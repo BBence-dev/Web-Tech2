@@ -1,0 +1,37 @@
+<mat-card class="menucard">
+  <mat-card-content>
+ <button mat-raised-button routerLinkActive="active" routerLink="/product-list" class="menubtn">Termék lista</button>
+ <button mat-raised-button routerLinkActive="active" routerLink="/account-info" class="menubtn">Fiók</button>
+ <button mat-raised-button  routerLinkActive="active" (click)=logout() class="logout">Kijelentkezés</button>
+</mat-card-content>
+</mat-card>
+
+
+<mat-card class="card">
+  <h2 class="title">Termék hozzáadása</h2>
+  <mat-card-content>
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form" >
+
+    <mat-form-field >
+      <mat-label>Név</mat-label>
+      <input matInput type="text" formControlName="name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field >
+      <mat-label>Mennyiség</mat-label>
+      <input matInput type="number"  formControlName="amount">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field >
+      <mat-label>Érték</mat-label>
+      <input matInput type="number" formControlName="cost">
+    </mat-form-field>
+    <br>
+
+    <button color="primary" mat-raised-button type="submit"  class="submit" >Felvitel</button>
+
+  </form>
+</mat-card-content>
+</mat-card>
